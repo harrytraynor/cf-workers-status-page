@@ -15,23 +15,20 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: compare-dev-uks
+    name: compare-dev-uks
+    url: 'https://compare-dev-uks.sb2.dev/api/string?code=KoHwuxanRLNM3NiKUpsuVgRCpt7kOGKTGCskNnbS5GrWT9XoyseNmA==&text1=simila&text2=similar'
+    method: GET
+    expectStatus: 200
+    
+  - id: sanitise-dev-uks
+    name: sanitise-dev-uks
+    url: 'https://sanitise-dev-uks.sb2.dev/api/emojis?code=IvAK8XT72Hmi6KBb9ni0/fv/fHUB6XbibaEXyWGy/JsplstEkMdzVA==&data=you-%F0%9F%91%8F-can-%F0%9F%91%8F-put-%F0%9F%91%8F-emjois-%F0%9F%91%8F-in-%F0%9F%91%8F-urls-%F0%9F%91%8F/'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: spelling-dev-uks
+    name: spelling-dev-uks
+    url: 'https://spelling-dev-uks.sb2.dev/api/correct?code=qKXeDWrtOaa7ataMfObbt6nsOmF8MbZOAgsq1SaRmauFAhaKScevbw==&word=incorect'
     method: GET
     expectStatus: 200
