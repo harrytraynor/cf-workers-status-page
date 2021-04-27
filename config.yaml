@@ -35,36 +35,36 @@ monitors:
 
   - id: compare-dev-uks
     name: compare-dev-uks
-    url: 'https://compare-dev-uks.sb2.dev/api/string?&text1=simila&text2=similar'
+    url: 'https://toastly-func-d-uks-compare.azurewebsites.net/api/string?&text1=simila&text2=similar'
     method: GET
     expectStatus: 200
     
   - id: sanitise-dev-uks
     name: sanitise-dev-uks
-    url: 'https://sanitise-dev-uks.sb2.dev/api/emojis?&data=you-%F0%9F%91%8F-can-%F0%9F%91%8F-put-%F0%9F%91%8F-emjois-%F0%9F%91%8F-in-%F0%9F%91%8F-urls-%F0%9F%91%8F/'
+    url: 'https://toastly-func-d-uks-sanitise.azurewebsites.net/api/emojis?&data=you-%F0%9F%91%8F-can-%F0%9F%91%8F-put-%F0%9F%91%8F-emjois-%F0%9F%91%8F-in-%F0%9F%91%8F-urls-%F0%9F%91%8F/'
     method: GET
     expectStatus: 200
 
   - id: spelling-dev-uks
     name: spelling-dev-uks
-    url: 'https://spelling-dev-uks.sb2.dev/api/correct?&word=incorect'
+    url: 'https://toastly-func-d-uks-spelling.azurewebsites.net/api/correct?&word=incorect'
     method: GET
     expectStatus: 200
     
   - id: compare-dev-ukw
     name: compare-dev-ukw
-    url: 'https://compare-dev-ukw.sb2.dev/api/string?&text1=simila&text2=similar'
+    url: 'https://toastly-func-d-ukw-compare.azurewebsites.net//api/string?&text1=simila&text2=similar'
     method: GET
     expectStatus: 200
     
   - id: sanitise-dev-ukw
     name: sanitise-dev-ukw
-    url: 'https://sanitise-dev-ukw.sb2.dev/api/emojis?&data=you-%F0%9F%91%8F-can-%F0%9F%91%8F-put-%F0%9F%91%8F-emjois-%F0%9F%91%8F-in-%F0%9F%91%8F-urls-%F0%9F%91%8F/'
+    url: 'https://toastly-func-d-ukw-sanitise.azurewebsites.net/api/emojis?&data=you-%F0%9F%91%8F-can-%F0%9F%91%8F-put-%F0%9F%91%8F-emjois-%F0%9F%91%8F-in-%F0%9F%91%8F-urls-%F0%9F%91%8F/'
     method: GET
     expectStatus: 200
 
   - id: spelling-dev-ukw
     name: spelling-dev-ukw
-    url: 'https://spelling-dev-ukw.sb2.dev/api/correct?&word=incorect'
+    url: 'https://toastly-func-d-ukw-spelling.azurewebsites.net/api/correct?&word=incorect'
     method: GET
     expectStatus: 200
